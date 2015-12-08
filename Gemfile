@@ -1,11 +1,17 @@
 source 'https://rubygems.org'
 
 gem 'rails', github: "rails/rails"
-gem 'sprockets-rails', github: "rails/sprockets-rails"
-gem 'sprockets', github: "rails/sprockets"
-gem 'sass-rails', github: "rails/sass-rails"
+gem 'sprockets-rails'
+gem 'sprockets'
+gem 'sass-rails'
 gem 'arel', github: "rails/arel"
 gem 'rack', github: "rack/rack"
+gem 'ember-rails'
+gem 'ember-source'
+gem 'ember-data-source', '~> 2.2.1'
+gem 'handlebars'
+gem 'ember-handlebars-template'
+gem 'ember-cli-rails'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
