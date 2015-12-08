@@ -3,5 +3,8 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+  Trip.create(name: 'Wild Weekend', location: 'Everywhere')
+  points = Point.create([{ name: 'A relaxing few days', location: 'Chicago', trip_id: 1},
+                         { name: 'Cheeky one', location: 'Amsterdam', trip_id: 1 },
+                         { name: 'Nandos', location: 'Manchester', trip_id: 1 }])
