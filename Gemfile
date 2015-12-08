@@ -10,8 +10,6 @@ gem 'rack', github: "rack/rack"
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
-# postgresql
-gem 'pg'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -31,6 +29,10 @@ gem 'active_model_serializers', '~> 0.10.0.rc2'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+end
+
+group :production do
+  gem 'pg'
 end
 
 group :development do
