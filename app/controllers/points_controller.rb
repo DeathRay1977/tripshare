@@ -16,11 +16,11 @@ class PointsController < ApplicationController
 
   # POST /points
   def create
-    @trip = Trip.find(params[:trip_id])
+    trip = Trip.find(params[:trip_id])
     @point = trip.points.create(point_params)
 
     if @point.save
-      render json: @point, status: :created, location: @point
+      render json: @point
     else
       render json: @point.errors, status: :unprocessable_entity
     end
