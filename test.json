@@ -1,4 +1,6 @@
 {
   "name":"TEST TEST TEST",
-  "location":"Manchester"
+  "location":"Manchester",
+  "placeid":"gobledygoop",
+  "rating": 4
 }

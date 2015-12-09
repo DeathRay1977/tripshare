@@ -48,4 +48,8 @@ class TripsController < ApplicationController
     def trip_params
       params.require(:trip).permit(:name, :location)
     end
+
+    def create_params
+      params.require(:trip).permit(:name, :location, :points)
+    end
 end
