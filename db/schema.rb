@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151209111840) do
+ActiveRecord::Schema.define(version: 20151209172527) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,10 +27,15 @@ ActiveRecord::Schema.define(version: 20151209111840) do
     t.string   "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "trip_id"
     t.string   "placeid"
     t.float    "rating"
-    t.index ["trip_id"], name: "index_points_on_trip_id", using: :btree
+  end
+
+  create_table "points_trips", id: false, force: :cascade do |t|
+    t.integer "trip_id"
+    t.integer "point_id"
+    t.index ["point_id"], name: "index_points_trips_on_point_id", using: :btree
+    t.index ["trip_id"], name: "index_points_trips_on_trip_id", using: :btree
   end
 
   create_table "trips", force: :cascade do |t|
@@ -38,10 +43,6 @@ ActiveRecord::Schema.define(version: 20151209111840) do
     t.string   "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "point_id"
-    t.index ["point_id"], name: "index_trips_on_point_id", using: :btree
   end
 
-  add_foreign_key "points", "trips"
-  add_foreign_key "trips", "points"
 end

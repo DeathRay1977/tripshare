@@ -1,9 +1,10 @@
 class PointsController < ApplicationController
   before_action :set_point, only: [:show, :update, :destroy]
 
-  # GET /points
+  # GET points
   def index
-    @points = Point.all
+    @trip = Trip.find(params[:trip_id])
+    @points = @trip.points.all
 
     render json: @points
   end
