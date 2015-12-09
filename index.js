@@ -17,7 +17,9 @@ $( document ).ready( function() {
 
   var printData = function(data) {
     data.forEach(function(place) {
-
+      service.getDetails({placeId: place.place_id}, function(response, status) {
+        console.log(response);
+      });
       $('#response').append([place.name, place.rating, place.formatted_address].join(', ') + '<br />');
     });
   };
