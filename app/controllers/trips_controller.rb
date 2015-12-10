@@ -3,14 +3,15 @@ class TripsController < ApplicationController
 
   # GET /trips
   def index
-    @trips = Trip.all
+    @trips = Trip.includes(:points).all
 
-    render json: @trips
+    render :json => @trips.to_json(:include => :points )
   end
 
   # GET /trips/1
   def show
-    render json: @trip
+    @trip = Trip.find(params[:id])
+    render :json => @trip.to_json(:include => :points )
   end
 
   # POST /trips
