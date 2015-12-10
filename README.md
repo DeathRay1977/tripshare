@@ -15,7 +15,50 @@ Technologies Used:
 * PostgreSQL
 
 
-How to use:
+# Planning
+
+We created a drawing in draw.io of what we would like the page to look like.
+
+![Imgur](http://i.imgur.com/AIaXC2W.png)
+
+Our initial user stories
+
+```
+As a user
+So I can post my trips
+I would like to be able to sign up
+
+As a user
+So I can post new trips
+I would like to be able to sign in
+
+As a user
+So that I can save my favorites
+I would like to be able to add a trip to my favorites trips
+
+As a user
+So that I can use the app
+I would like to be able to add a new trip
+
+As a user
+So that I can use the app
+I would like to be able to add a point of interest to my trip
+
+As a user
+So that I can find interesting places to visit when I am travelling
+I would like to be able to search trips by area
+
+As a user
+So that I can find trips which are suitable to me
+I would like to be able to filter trips by tag
+
+As a user
+So that I can see the most popular trips
+I would like to see a list of the best rated trips
+```
+
+
+#How to use:
 
 When you first visit the page at https://tripshare-frontend.herokuapp.com/ you will be greeted by:
 
