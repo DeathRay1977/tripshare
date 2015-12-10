@@ -19,7 +19,7 @@ How to use:
 
 When you first visit the page at https://tripshare-frontend.herokuapp.com/ you will be greeted by:
 
-[Imgur](http://i.imgur.com/XTTnH3N.png)
+![Imgur](http://i.imgur.com/XTTnH3N.png)
 
 To add a trip, click the top button for add trip
 
