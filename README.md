@@ -4,7 +4,7 @@ Tripshare is a website application created by Andrew Dowell, Norm Fasey, Pablo D
 
 Technologies Used:
 
-* Ruby On Rails 5.0 API only backend
+* Ruby On Rails API only backend
 
 * HTML & CSS
 
